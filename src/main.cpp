@@ -6,6 +6,7 @@
  * When this callback is fired, it will toggle line 2 of the LCD text between
  * "I was pressed!" and nothing.
  */
+
 void on_center_button() {
 	static bool pressed = false;
 	pressed = !pressed;
@@ -28,6 +29,24 @@ void initialize() {
 
 	pros::lcd::register_btn1_cb(on_center_button);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * Runs while the robot is in the disabled state of Field Management System or
