@@ -38,10 +38,12 @@
 #include "sylib/sylib.hpp"
 
 
-#include "/Controls/Intake.h"
-#include "/Controls/Lifter.h"
-#include "/Controls/Shooter.h"
-#include "/Drivetrain/Train.h"
+#include "Controls/Intake.h"
+#include "Controls/Lifter.h"
+#include "Controls/Shooter.h"
+#include "Drivetrain/Train.h"
+#include "Controls/PTO.h"
+
 /**
  * You should add more #includes here
  */

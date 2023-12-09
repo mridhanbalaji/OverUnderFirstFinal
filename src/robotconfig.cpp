@@ -8,14 +8,13 @@ const double varE
 pros::Controller master(pros::E_CONTROLLER_MASTER);
 
 
-pros::Motor left_front_motor(1,pros::E_MOTOR_GEAR_600, true); // port 2, not reversed
-pros::Motor left_back_motor(2,pros::E_MOTOR_GEAR_600, false); // port 1, not reversed
-pros::Motor left_PTO_motor(3,pros::E_MOTOR_GEAR_600, false); // port 2, not reversed
-pros::Motor right_front_motor(8,pros::E_MOTOR_GEAR_600, true); // port 3, reversed
-pros::Motor right_back_motor(9,pros::E_MOTOR_GEAR_600, false); // port 4, reversed.
-pros::Motor right_PTO_motor(10,pros::E_MOTOR_GEAR_600, false); // port 4, reversed.
-pros::Motor Intakemotor(12,pros::E_MOTOR_GEAR_600,true); // port 3, reversed
-// pros::Motor flywheel(14,pros::E_MOTOR_GEAR_600,true); // port 3, reversed
+pros::Motor left_front_motor(3, pros::E_MOTOR_GEAR_600, true); // port 3, not reversed DONE
+pros::Motor left_back_motor(4, pros::E_MOTOR_GEAR_600, false); // port 1, not reversed DONE
+pros::Motor left_PTO_motor(1, pros::E_MOTOR_GEAR_600, false); // port 1, not reversed DONE
+pros::Motor right_front_motor(10, pros::E_MOTOR_GEAR_600, true); // port 3, reversed DONE
+pros::Motor right_back_motor(9, pros::E_MOTOR_GEAR_600, false); // port 4, reversed DONE
+pros::Motor right_PTO_motor(8, pros::E_MOTOR_GEAR_600, false); // port 4, reversed DONE
+pros::Motor Intakemotor(2, pros::E_MOTOR_GEAR_600,true); // port 2, reversed DONE
  
  
 // drivetrain motor groups
@@ -43,6 +42,8 @@ sylib::SpeedControllerInfo flywheelController(
     1     // coast down constant
 );
 
-// Create a motor object on port 17, with a purple cart, set as reversed, and
+// Create a motor object on port 7, with a purple cart, set as reversed, and
 // with motor_speed_controller as a custom velocity controller
-sylib::Motor flywheel(1, 3600, true, flywheelController);
+sylib::Motor flywheel(7, 3600, true, flywheelController); // DONE
+
+

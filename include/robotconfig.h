@@ -21,3 +21,5 @@ extern pros::MotorGroup left_side_motors;
 extern pros::MotorGroup right_side_motors;
 
 extern bool PTOEnabled;
+extern int controllerX;
+extern int controllerY;

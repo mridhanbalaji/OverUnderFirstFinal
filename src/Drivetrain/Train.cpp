@@ -63,8 +63,8 @@ double currentRightPower = 0;
 double currentLeftPower = 0;
 
 void Train::robotCentric(){
-  int controllerY = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
-  int controllerX = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
+  controllerY = master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y);
+  controllerX = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
 
   //Deadzone
   if(abs(master.get_analog(pros::E_CONTROLLER_ANALOG_LEFT_Y)) < 5) {controllerY = 0;}
